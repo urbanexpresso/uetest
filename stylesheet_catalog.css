@@ -8,17 +8,17 @@ p {
    body {
       font-family: Helvetica;
       background-color: #000000;
-      padding-top: 10px;
+      padding-top: 0px;
       padding-bottom: 15px;
           }
           .headbar {
-            height: 70px;
+            height: 50px;
 
             display: flex;
             align-items: center;
             justify-content: space-between;
             background-color: black;
-            padding: 0 15px;
+            padding: 0 0px;
             position: relative;
           }
           
@@ -37,8 +37,8 @@ p {
           
           .café-button-div-ffs {
             position: fixed;
-            right: 15px;
-            top: 10px; /* Aligns it with the header */
+            right: 2px;
+            top: 5px; /* Aligns it with the header */
             z-index: 1000;
           }
           
@@ -60,8 +60,9 @@ p {
             cursor: pointer;
             font-size: 15px;
             transition: background-color 0.15s, color 0.15s;
-            margin-top: 47px;
+            margin-top: 79px;
             text-align: left;
+            padding-top: 2px;
           }
           
           .labelinfo:hover,
@@ -85,6 +86,7 @@ p {
     column-gap: 15px;
     row-gap: 40px;
     margin-block-end: 15px;
+    margin-top: 7px;
   }
   @media (max-width: 525px) {
     .all_pieces_fr {
