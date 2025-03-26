@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      charset="UTF-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Urban Expresso - Artist Information</title>
+    <style>
+      body {
+        font-family: Helvetica;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+        margin: 0;
+        padding-bottom: 25px;
+        background-color: #000000;
+      }
+
+      .all_elements {
+        display: block;
+        width: 350px;
+      }
+
+      .Artpiece {
+        width: 100%;
+        border: 1px;
+        border-color: azure;
+        background-color: black;
+        transition: transform 0.3s ease;
+        object-fit: cover;
+      }
+      .photo {
+        width: 100%;
+        object-fit: cover;
+      }
+      .participating_party {
+        font-size: 18px;
+        color: azure;
+        width: 100%;
+        font-weight: bold;
+        line-height: 24px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+      }
+      .text {
+        font-size: 14px;
+        color: azure;
+        margin-bottom: 5px;
+        font-family: Helvetica;
+      }
+      ol {
+        background: black;
+        padding: 10px;
+        margin-top: -12px;
+      }
+      li::marker {
+        background-color: rgba(107, 107, 107, 0.733);
+      }
+      ol li {
+        background: black;
+        color: azure;
+        padding: 5px;
+        margin-bottom: 14px;
+        border: solid 1px azure;
+        border-radius: 7px;
+      }
+      .label {
+        display: inline-block;
+        background-color: black;
+        font-family: Helvetica;
+        border: 1px solid azure;
+        border-radius: 5px;
+        padding: 9px;
+        text-align: left;
+        color: azure;
+        cursor: pointer;
+        margin-top: 7px; /* Margin around buttons */
+        font-size: 18px; /* Increased font size for buttons */
+        transition: background-color 0.15s, color 0.15s;
+      }
+      .label:hover {
+        background-color: azure;
+        color: black;
+      }
+      .return-botton-location {
+        text-align: right;
+      }
+      .café-button-div-ffs {
+        margin-top: 20px;
+      }
+      .café-button {
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        border: 1px solid black;
+        border-radius: 3px;
+        cursor: pointer;
+        margin: 0; /* Margin around buttons */
+        padding: 2px; /* Increased padding for larger buttons */
+        font-size: 9px; /* Increased font size for buttons */
+        transition: background-color 0.15s, color 0.15s;
+        margin-right: 12px;
+      }
+
+      .café-button:hover {
+        background-color: rgb(255, 255, 255);
+        color: black;
+        border: 1px solid black;
+      }
+      .label:hover a,
+      .café-button:hover a {
+        color: black !important;
+      }
+      .café-button:active {
+        background-color: rgb(0, 0, 0);
+        color: azure;
+      }
+
+      /* Style for the return button */
+      .return-button {
+        margin-top: 20px;
+      }
+      a {
+        color: azure; /* Link color */
+        text-decoration: underline; /* Underline links */
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="all_elements">
+        <div class="Artpiece">
+          <div class="participating_party">
+            <h2>Cafés' Need to Know</h2>
+          </div>
+          <!-- <div class="text">
+            If you are a café-manager from Basel, <br />
+            you are exactly at the right place! 
+          </div> -->
+          <div class="text">
+            <h2>4 steps to know the concept:</h2>
+            <ol>
+              <!-- <li>
+                An empty spot in your café may serve as an opportunity to create
+                a pleasant surprise to your regular customers and attract the
+                eye of your not-yet regulars!
+              </li> -->
+              <li>
+                We manage an exclusive catalogue with quality-approved amateur
+                art. Each painting has passed a two-step process: (1)
+                <a
+                  href="PDFs/BasicCriteria_en_draft01.pdf"
+                  target="_blank"
+                  style="color: azure"
+                  >Basic Submission Criteria</a
+                >
+                <br />(2)
+                <a
+                  href="PDFs/Independent Expert Evaluation en draft 01.pdf"
+                  target="_blank"
+                  style="color: azure"
+                  >Independent Expert Evaluation</a
+                >.
+              </li>
+              <li>
+                The catalogue is only available to café-managers. If there's a
+                painting that you want to have in your café, you can order it
+                completely for free.
+              </li>
+              <li>
+                Via QR-Code, your customers can text the artist an offer to buy
+                the painting. The artist can either accept or deny the offer. If
+                the artist agrees, you will receive 10% of the total amount,
+                while 80% goes to the artist and 10% goes to us for logistics.
+              </li>
+              <li>
+                We will inform you about the new owner's initials, who can then
+                pick up the painting at your café after presenting his
+                Identification Card (ID) to an employee of yours for
+                confirmation.
+              </li>
+            </ol>
+          </div>
+          <div class="text">
+            <h2>1 step to participate:</h2>
+            <ol>
+              <li>
+                Send us a
+                <a
+                  href="mailto:urbanexpresso@proton.me?subject=Caf%C3%A9-Manager"
+                  style="color: azure"
+                  >Mail</a
+                >
+                to get access to the catalogue. <br />Your catalogue-login will
+                be delivered to your café personally to ensure identity
+                verification and data security.
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="return-botton-location">
+          <button class="café-button return-button">
+            <a href="cafés.html" style="text-decoration: none">back</a>
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

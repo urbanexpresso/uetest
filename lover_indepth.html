@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      charset="UTF-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Urban Expresso - Artist Information</title>
+    <style>
+      body {
+        font-family: Helvetica;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+        margin: 0;
+padding-bottom: 25px;
+        background-color: #000000;
+      }
+
+      .all_elements {
+        display: block;
+        width: 350px;
+      }
+
+      .Artpiece {
+        width: 100%;
+        border: 1px;
+        border-color: azure;
+        background-color: black;
+        transition: transform 0.3s ease;
+        object-fit: cover;
+      }
+      .photo {
+        width: 100%;
+        object-fit: cover;
+      }
+      .participating_party {
+        font-size: 18px;
+        color: azure;
+        width: 100%;
+        font-weight: bold;
+        line-height: 24px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+      }
+      .text {
+        font-size: 14px;
+        color: azure;
+        margin-bottom: 5px;
+        font-family: Helvetica;
+      }
+      ol {
+        background: black;
+        padding: 10px;
+        margin-top: -12px;
+      }
+      li::marker {
+        background-color: rgba(107, 107, 107, 0.733);
+      }
+      ol li {
+        background: black;
+        color: azure;
+        padding: 5px;
+        margin-bottom: 14px;
+        border: solid 1px azure;
+        border-radius: 7px;
+      }      
+      .label {
+        display: inline-block;
+        background-color: black;
+        font-family: Helvetica;
+        border: 1px solid azure;
+        border-radius: 5px;
+        padding: 9px;
+        text-align: left;
+        color: azure;
+        cursor: pointer;
+        margin-top: 7px; /* Margin around buttons */
+        font-size: 18px; /* Increased font size for buttons */
+        transition: background-color 0.15s, color 0.15s;
+      }
+      .label:hover {
+        background-color: azure;
+        color: black;
+      }
+      .return-botton-location {
+        text-align: right;
+      }
+      .café-button-div-ffs {
+        margin-top: 20px;
+      }
+      .café-button {
+        background-color: rgb(0, 0, 0);
+        color: azure;
+        border: 1px solid black;
+        border-radius: 3px;
+        cursor: pointer;
+        margin: 0; /* Margin around buttons */
+        padding: 2px; /* Increased padding for larger buttons */
+        font-size: 9px; /* Increased font size for buttons */
+        transition: background-color 0.15s, color 0.15s;
+        margin-right: 12px;
+      }
+
+      .café-button:hover {
+        background-color: rgb(255, 255, 255);
+        color: black;
+        border: 1px solid black;
+      }
+      .label:hover a,
+      .café-button:hover a {
+        color: black !important;
+      }
+      .café-button:active {
+        background-color: rgb(0, 0, 0);
+        color: azure;
+      }
+
+      /* Style for the return button */
+      .return-button {
+        margin-top: 20px;
+      }
+      a {
+        color: azure; /* Link color */
+        text-decoration: underline; /* Underline links */
+      }
+    </style>
+  <body>
+    <main>
+      <div class="all_elements">
+        <div class="Artpiece">
+          <div class="participating_party">
+            <h2>Art-Lovers' Need to Know</h2>
+          </div>
+          <!-- <div class="text">
+            If you are an art-loving individual, <br>you are exactly at the right place!
+          </div> -->
+          <div class="text">
+            <h2>3 steps to know the concept</h2>
+            <ol>
+              <li>
+                At your next café-visit you might discover amateur art on the wall right next to you, quality-approved in a a two-step process: (1) <a
+                href="PDFs/BasicCriteria_en_draft01.pdf"
+                target="_blank"
+                style="color: azure"
+                >Basic Submission Criteria</a> (2)                            <a
+                href="PDFs/Independent Expert Evaluation en draft 01.pdf"
+                target="_blank"
+                style="color: azure"
+                >Independent Expert Evaluation</a
+              >.
+              </li>
+              <li>
+                If you would like to take it home with you, use the mail below to text the artist an offer. The artist can either accept or deny your offer. If accepted, 80% of the total amount goes to the artist, 10% goes to the café and 10% goes to us for
+                logistics.
+              </li>
+              <li>
+                If the the transaction is successfull, we'll inform the café and let you know as soon as your painting can be picked up. Just present your ID to an employee of the café to take the painting home with you.
+              </li>
+            </ol>
+          </div>
+          <div class="text">
+            <h2>
+              How to send an offer:
+            </h2>
+            <ol>
+              <li>
+                Send us your offer using this  
+                <a     href="mailto:urbanexpresso@proton.me?subject=Offer&body=Hi%20there%2C%20%0D%0A%0D%0AI%20want%20to%20make%20an%20offer!%0D%0A%0D%0AThe%20painting's%20ID%3A%0D%0AThe%20name%20of%20the%20caf%C3%A9%3A%0D%0AMy%20offer%20(in%20CHF)%3A%0D%0AMy%20name%3A%0D%0A%0D%0ABest%20wishes%2C%0D%0A"
+                  style="color: azure"
+                  >Mail</a
+                >.
+               <br>By sending an offer, you agree to our
+               <a
+               href="PDFs/UE_TC_Privacy_01_en.pdf"
+               target="_blank"
+               style="color: azure"
+               >terms &#38; conditions</a
+             >.
+              </li>
+            </ol>
+          </div>
+        </div>
+<!--Just enter your offer, the painting's registration
+                number, the name of the café you're in and your contact details.-->
+        <div class="Artpiece">
+          <div class="text">
+          </div>
+        </div>
+        <div class="return-botton-location">
+          <button class="café-button return-button">
+            <a href="lover.html" style="text-decoration: none">back</a>
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

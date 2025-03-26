@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="intial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="stylesheet_else.css" />
+    <style>
+      body {
+        background-color: black;
+      }
+
+      .overallpage {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px; /* Remove default margin */
+      }
+      .textpointingright {
+        background-color: black;
+        font-family: Helvetica;
+        align-items: center;
+        display: inline-block;
+        flex-direction: column;
+      }
+      .info01 {
+        font-family: Helvetica;
+        color: azure;
+        font-size: 14px;
+        margin-right: 5px;
+        margin-top: 120px;
+        text-align: right;
+      }
+      .info1 {
+        font-family: Helvetica;
+        color: azure;
+        margin-right: 5px;
+        text-align: right;
+        font-size: 14px;
+        margin-top: 100px;
+      }
+      .arrowspointingright {
+        background-color: black;
+        align-items: center;
+        display: inline-block;
+        flex-direction: column;
+        margin-right: 5px;
+        margin-top: 13px;
+      }
+      .arrow_01 {
+        display: block;
+        width: 30px;
+      }
+      .arrow01img {
+        display: block;
+        width: 30px;
+        margin-top: 80px;
+        object-fit: contain;
+      }
+      .arrow_1 {
+        display: block;
+        width: 30px;
+      }
+      .arrow1img {
+        display: block;
+        width: 30px;
+        margin-top: 17px;
+        height: 152.664px;
+        object-fit: contain;
+      }
+      .center {
+        background-color: black;
+        font-family: Helvetica;
+        align-items: center;
+        display: inline-block;
+        margin-top: -12px;
+        flex-direction: column;
+      }
+      .title {
+        display: block;
+        width: 200;
+        text-align: center;
+        font-family: Helvetica;
+        font-size: 48px;
+        color: azure;
+        margin-bottom: -8px;
+      }
+      .title1 {
+        display: block;
+        text-align: center;
+        width: 200;
+        margin-top: 1px;
+        font-family: Helvetica;
+        font-size: 30px;
+        color: azure;
+        margin-bottom: 0px;
+      }
+      .subtitle {
+        display: block;
+        text-align: center;
+        width: 200;
+        margin-top: 1px;
+        font-family: Helvetica;
+        font-size: 14px;
+        color: azure;
+        margin-bottom: 0px;
+      }
+      .Party {
+        display: block;
+        margin-top: 5px;
+      }
+      .roles {
+        width: 360px; /* Increased width of the roles and info boxes */
+        text-align: left;
+        display: block; /* Justified text */
+        line-height: 1.6;
+        font-size: 16px;
+        margin-bottom: 5px;
+        color: azure;
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.9
+        ); /* Slight transparency for the background */
+        padding: 10px;
+      }
+      .café-ffs {
+        align-items: center;
+        display: block;
+      }
+      .café-ffs1 {
+        align-items: center;
+        display: block;
+      }
+      .label {
+        display: inline-block;
+        background-color: rgb(0, 0, 0);
+        font-family: Helvetica;
+        border: 1px solid azure;
+        border-radius: 3px;
+        padding: 9px;
+        text-align: left;
+        margin-bottom: 10px;
+        color: azure;
+        cursor: pointer;
+        margin-top: 7px; /* Margin around buttons */
+        font-size: 18px; /* Increased font size for buttons */
+        transition: background-color 0.15s, color 0.15s;
+      }
+      .label:hover {
+        color: black;
+        background-color: azure;
+        transition: background-color 0.15s, color 0.15s;
+      }
+      .label1 {
+        vertical-align: text-top;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        border: 1px solid azure;
+        cursor: pointer;
+        margin-top: 21px; /* Margin around buttons */
+        border-radius: 3px;
+        width: 150px;
+        padding: 15px 15px; /* Increased padding for larger buttons */
+        font-size: 16px; /* Increased font size for buttons */
+        transition: background-color 0.15s, color 0.15s;
+        transition: background-color 0.15s, color 0.15s;
+      }
+      .label1:hover {
+        color: black;
+        background-color: azure;
+        transition: background-color 0.15s, color 0.15s;
+      }
+      .label:hover .title,
+      .label:hover .title1,
+      .label:hover .subtitle {
+        color: black;
+        transition: background-color 0.15s, color 0.15s;
+      }
+      .return-botton-location {
+        margin-top: -27px;
+        text-align: right;
+      }
+      .café-button-div-ffs {
+        margin-top: 20px;
+      }
+      .café-button {
+        vertical-align: text-top;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        border: 1px solid azure;
+        cursor: pointer;
+        margin-top: 30px; /* Margin around buttons */
+        width: 150px;
+        padding: 15px 15px; /* Increased padding for larger buttons */
+        font-size: 16px; /* Increased font size for buttons */
+        transition: background-color 0.15s, color 0.15s;
+      }
+      .café-button1 {
+        vertical-align: text-top;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        border: 1px solid azure;
+        cursor: pointer;
+        margin-top: 30px; /* Margin around buttons */
+        width: 150px;
+        padding: 15px 15px; /* Increased padding for larger buttons */
+        font-size: 16px; /* Increased font size for buttons */
+        transition: background-color 0.15s, color 0.15s;
+      }
+      .café-button .café-button1 {
+        vertical-align: text-top;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        border: 1px solid azure;
+        cursor: pointer;
+        margin-top: 30px; /* Margin around buttons */
+        width: 150px;
+        padding: 15px 15px; /* Increased padding for larger buttons */
+        font-size: 16px; /* Increased font size for buttons */
+        transition: background-color 0.15s, color 0.15s;
+      }
+
+      .café-button:hover .café-button1:hover {
+        background-color: rgb(255, 255, 255);
+        color: black;
+        border: 1px solid black;
+      }
+
+      .café-button:active .café-button1:active {
+        background-color: rgb(0, 0, 0);
+        color: azure;
+      }
+      a {
+        color: inherit;
+      }
+      .arrowspointingleft {
+        background-color: black;
+        align-items: center;
+        display: inline-block;
+        flex-direction: column;
+        margin-left: 5px;
+        margin-top: 13px;
+      }
+      .arrow_02 {
+        display: block;
+        width: 30px;
+      }
+      .arrow02img {
+        display: block;
+        margin-top: 75px;
+        height: 176.662px;
+        width: 30px;
+        object-fit: contain;
+      }
+      .arrow_2 {
+        display: block;
+        width: 30px;
+      }
+      .arrow2img {
+        display: block;
+        width: 30px;
+        margin-top: 15px;
+        height: 79.956px;
+        object-fit: contain;
+      }
+      .textpointingleft {
+        background-color: black;
+        font-family: Helvetica;
+        align-items: center;
+        display: inline-block;
+        flex-direction: column;
+      }
+      .info02 {
+        font-family: Helvetica;
+        color: azure;
+        margin-top: 154px;
+        margin-left: 5px;
+        text-align: left;
+        font-size: 14px;
+      }
+      .info2 {
+        font-family: Helvetica;
+        color: azure;
+        text-align: left;
+        font-size: 14px;
+        margin-left: 3px;
+        margin-top: 116px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Cheers Thomas!-->
+    <div class="overallpage">
+      <div class="infopointingright">
+        <div class="info01">submits<br />painting</div>
+        <div class="info1">
+          makes<br />
+          an offer
+        </div>
+      </div>
+      <div class="arrowspointingright">
+        <div class="arrow_01">
+          <img class="arrow01img" src="IMG_index/pointsright.png" alt="" />
+        </div>
+        <div class="arrow_1">
+          <img
+            class="arrow1img"
+            src="IMG_index/arrowpointsrightbiggo.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="center">
+        <div class="café-button-div-ffs">
+          <a href="aboutus.html" style="text-decoration: none" target="_blank">
+            <button class="label">
+              <div class="title">Urban</div>
+              <div class="title1">Expresso</div>
+              <div class="subtitle">Amateur Art Agency</div>
+            </button>
+          </a>
+        </div>
+
+        <div class="Party">
+          <div class="café-ffs">
+            <button class="label1">
+              <a href="artist.html" style="text-decoration: none"
+                >Amateur-Artist</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="Party">
+          <div class="café-ffs">
+            <button class="label1">
+              <a href="cafés.html" style="text-decoration: none"
+                >Café-Manager</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="Party">
+          <div class="café-ffs">
+            <button class="label1">
+              <a href="lover.html" style="text-decoration: none">Art-Lover</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="arrowspointingleft">
+        <div class="arrow_02">
+          <img
+            class="arrow02img"
+            src="IMG_index/arrowpointingleftbiggo.png"
+            alt=""
+          />
+        </div>
+        <div class="arrow_2">
+          <img class="arrow2img" src="IMG_index/pointsleft.png" alt="" />
+        </div>
+      </div>
+      <div class="infopointingright">
+        <div class="info02">orders<br />painting</div>
+        <div class="info2">discovers<br />painting</div>
+      </div>
+    </div>
+    <script>
+      /* document.addEventListener("DOMContentLoaded", function () {
+        const style = document.createElement("style");
+        style.innerHTML = `
+            @keyframes fadeIn {
+              from {
+                opacity: 0;
+              }
+              to {
+                opacity: 1;
+              }
+            }
+            
+            .info01, .arrow_01,
+            .info02, .arrow_02,
+            .info2, .arrow_2,
+            .info1, .arrow_1 {
+              opacity: 0;
+            }
+          `;
+        document.head.appendChild(style);
+
+        const elements = [
+          [".info01", ".arrow_01"],
+          [".info02", ".arrow_02"],
+          [".info2", ".arrow_2"],
+          [".info1", ".arrow_1"],
+        ];
+
+        elements.forEach((pair, index) => {
+          setTimeout(() => {
+            pair.forEach((selector) => {
+              const element = document.querySelector(selector);
+              if (element) {
+                element.style.animation = "fadeIn 1s ease-out forwards";
+              }
+            });
+          }, (index + 1) * 1000); // 1-second delay per pair
+        });
+      }); */
+    </script>
+  </body>
+</html>

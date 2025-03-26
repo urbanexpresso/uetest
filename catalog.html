@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="intial-scale=1, width=device-width" />
+    <title>Urban Expresso</title>
+    />
+    <link rel="stylesheet" href="stylesheet_catalog.css" />
+    <script type="text/javascript">
+      var password = "please let me in"; // set your desired password
+      function checkPassword() {
+        var inputPassword = prompt("Password required:");
+        if (inputPassword === password) {
+          document.getElementById("protectedContent").style.display = "block";
+        } else {
+          alert("Incorrect password");
+        }
+      }
+    </script>
+  </head>
+  <body onload="checkPassword()">
+    <div id="protectedContent" style="display: none">
+      <header class="headbar">
+        <div class="title">
+          <h1>Le Catalogue</h1>
+          <div class="café-button-div-ffs2">
+            <a
+              href="PDFs/Information_Catalogue.pdf"
+              style="text-decoration: none"
+              target="_blank"
+            >
+              <button class="labelinfo">i</button>
+            </a>
+          </div>
+        </div>
+        <div class="café-button-div-ffs">
+          <a
+            href="mailto:urbanexpresso@proton.me?subject=Order&body=Hi%20there%2C%0D%0A%0D%0AI%20would%20like%20to%20order%20a%20painting%20to%20my%20caf%C3%A9.%0D%0A%0D%0AThe%20painting's%20ID%3A%0D%0AMy%20verification-number%3A%0D%0A%0D%0ABest%20wishes%2C%0D%0A"
+            style="color: azure"
+          >
+            <button class="labelorder">1. Copy ID <br />2. Click here</button>
+          </a>
+        </div>
+      </header>
+
+      <main>
+        <section class="all_pieces_fr">
+          <div class="Artpiece">
+            <div>
+              <img class="photo" src="IMG_painting/corrio_00102931.jpg" />
+            </div>
+            <div>
+              <p class="name_number">ID: 00104</p>
+              <p class="dimensions">Dimensions: 15 x 8 cm</p>
+              <p class="Availability">
+                Availability: <span class="dot0"></span>
+              </p>
+            </div>
+          </div>
+          <div class="Artpiece">
+            <div>
+              <img class="photo" src="IMG_painting/potoli_00409238.jpg" />
+            </div>
+            <div>
+              <p class="name_number">ID: 00205</p>
+              <p class="dimensions">Dimensions: 40 x 20cm</p>
+              <p class="Availability">
+                Availability: <span class="dot1"></span>
+              </p>
+            </div>
+          </div>
+          <div class="Artpiece">
+            <div>
+              <img class="photo" src="IMG_painting/geordina_00302918.jpg" />
+            </div>
+            <div>
+              <p class="name_number">ID: 00801</p>
+              <p class="dimensions">Dimensions: 90 x 40 cm</p>
+              <p class="Availability">
+                Availability: <span class="dot0"></span>
+              </p>
+            </div>
+          </div>
+          <div class="Artpiece">
+            <div>
+              <img class="photo" src="IMG_painting/molpilo__00200391.jpg" />
+            </div>
+            <div>
+              <p class="name_number">ID: 00201</p>
+              <p class="dimensions">Dimensions: 20 x 10 cm</p>
+              <p class="Availability">
+                Availability: <span class="dot1"></span>
+              </p>
+            </div>
+          </div>
+        </section>
+        <!--
+        <div class="bottom-line">
+          <div class="contact"><a href="mailto:moccamosaic@proton.me">urbanexpresso@proton.me</a></div>
+          <div class="copyright">&copy;Urban Expresso 2025 </div>
+          <div class="terms">Terms &#38; Conditions</div>
+          <div class="backtotop">
+            <button class="backtopbutton">back to top</button>
+          </div> -->
+      </main>
+    </div>
+  </body>
+</html>

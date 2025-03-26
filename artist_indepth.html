@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      charset="UTF-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Urban Expresso - Artist Information</title>
+    <style>
+      body {
+        font-family: Helvetica;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+        margin: 0;
+        padding-bottom: 25px;
+        background-color: #000000;
+      }
+
+      .all_elements {
+        display: block;
+        width: 350px;
+      }
+
+      .Artpiece {
+        width: 100%;
+        border: 1px;
+        border-color: azure;
+        background-color: black;
+        transition: transform 0.3s ease;
+        object-fit: cover;
+      }
+      .photo {
+        width: 100%;
+        object-fit: cover;
+      }
+      .participating_party {
+        font-size: 18px;
+        color: azure;
+        width: 100%;
+        font-weight: bold;
+        line-height: 24px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+      }
+      .text {
+        font-size: 14px;
+        color: azure;
+        margin-bottom: 5px;
+        font-family: Helvetica;
+      }
+      ol {
+        background: black;
+        padding: 10px;
+        margin-top: -12px;
+      }
+      li::marker {
+        background-color: rgba(107, 107, 107, 0.733);
+      }
+      ol li {
+        background: black;
+        color: azure;
+        padding: 5px;
+        margin-bottom: 14px;
+        border: solid 1px azure;
+        border-radius: 7px;
+      }
+      a {
+        color: azure; /* Link color */
+        text-decoration: underline; /* Underline links */
+      }
+      .label {
+        display: inline-block;
+        background-color: black;
+        font-family: Helvetica;
+        border: 1px solid azure;
+        border-radius: 5px;
+        padding: 9px;
+        text-align: left;
+        color: azure;
+        cursor: pointer;
+        margin-top: 7px; /* Margin around buttons */
+        font-size: 18px; /* Increased font size for buttons */
+        transition: background-color 0.15s, color 0.15s;
+      }
+      .label:hover {
+        background-color: azure;
+        color: black;
+      }
+      .return-botton-location {
+        margin-top: -27px;
+        text-align: right;
+      }
+      .café-button-div-ffs {
+        margin-top: 20px;
+      }
+      .café-button {
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        border: 1px solid black;
+        border-radius: 3px;
+        cursor: pointer;
+        margin: 0; /* Margin around buttons */
+        padding: 2px; /* Increased padding for larger buttons */
+        font-size: 9px; /* Increased font size for buttons */
+        transition: background-color 0.15s, color 0.15s;
+        margin-right: 12px;
+      }
+
+      .café-button:hover {
+        background-color: rgb(255, 255, 255);
+        color: black;
+        border: 1px solid black;
+      }
+      .label:hover a,
+      .café-button:hover a {
+        color: black !important;
+      }
+      .café-button:active {
+        background-color: rgb(0, 0, 0);
+        color: azure;
+      }
+
+      /* Style for the return button */
+      .return-button {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="all_elements">
+        <div class="Artpiece">
+          <div class="participating_party"><h2>Artists' Need to Know</h2></div>
+          <!-- <div class="text">
+            If you are a young artist enjoying to paint on canvas, you're
+            exactly at the right place!
+          </div> -->
+          <div class="text">
+            <h2>5 steps to know the process</h2>
+            <ol>
+              <li>
+                Submit your painting in the mail below and we'll evaluate it in
+                two-step process: (1)
+                <a
+                  href="PDFs/BasicCriteria_en_draft01.pdf"
+                  target="_blank"
+                  style="color: azure"
+                  >Basic Submission Criteria</a
+                >
+                (2)
+                <a
+                  href="PDFs/Independent Expert Evaluation en draft 01.pdf"
+                  target="_blank"
+                  style="color: azure"
+                  >Independent Expert Evaluation</a
+                >.
+              </li>
+              <li>
+                If passed, we will review the Basic Sumbission Criteria again
+                on-site before adding your painting to our storage and our
+                online-catalogue.
+              </li>
+              <li>
+                The catalogue can only be accessed by café-managers to order
+                paintings to their café for free. Via QR-Code café-customers can
+                make you an offer to buy your art.
+              </li>
+              <li>
+                Every offer is presented to you to either accept or reject. By
+                accepting the offer, you will receive 80% of the total amount,
+                while 10% go to the café for its infrastructure and 10% to us
+                for logistics.
+              </li>
+              <li>
+                After successful transaction, we will inform the café about the
+                new owner, who can pick up the painting at the café by
+                presenting his/her Identification Card (ID) for confirmation.
+              </li>
+            </ol>
+          </div>
+          <div class="text">
+            <h2>2 steps to participate:</h2>
+            <ol>
+              <li>
+                Check out the
+                <a
+                  href="PDFs/BasicCriteria_en_draft01.pdf"
+                  target="_blank"
+                  style="color: azure"
+                  >Basic Submission Criteria</a
+                >
+              </li>
+              <li>
+                If the criteria apply, attach a picture of your painting to this
+                <a
+                  href="mailto:urbanexpresso@proton.me?subject=Art-Submission&body=Hi%20there!%20%0D%0A%0D%0ASee%20attached%20a%20picture%20of%20my%20painting.%0D%0APainting's%20height%20and%20width%20(in%20cm)%3A%20%0D%0AMy%20name%3A%0D%0AMy%20age%3A%0D%0A%0D%0ABest%20wishes%2C%20%0D%0A"
+                  style="color: azure"
+                  >Mail</a
+                >. Please note that by submitting your art you accept our
+                <a
+                  href="PDFs/UE_TC_Privacy_01_en.pdf"
+                  target="_blank"
+                  style="color: azure"
+                  >terms &#38; conditions</a
+                >.
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="return-botton-location">
+          <button class="café-button return-button">
+            <a href="artist.html" style="text-decoration: none">back</a>
+          </button>
+        </div>
+      </div>
+    </main>
+    <script></script>
+  </body>
+</html>

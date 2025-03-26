@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      charset="UTF-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Urban Expresso - About us</title>
+    <style>
+      body {
+        font-family: Helvetica;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+        margin: 0;
+padding-bottom: 25px;
+        background-color: #000000;
+      }
+h2 {
+  margin-bottom: 5px;
+  margin-top: 23px;
+}
+      .all_elements {
+        display: block;
+        width: 350px;
+      }
+
+      .Artpiece {
+        width: 100%;
+        border: 1px;
+        border-color: azure;
+        background-color: black;
+        transition: transform 0.3s ease;
+        object-fit: cover;
+      }
+      .photo {
+        width: 100%;
+        object-fit: cover;
+      }
+      .participating_party {
+        font-size: 18px;
+        color: azure;
+        width: 100%;
+        font-weight: bold;
+        line-height: 24px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+      }
+      .text {
+        font-size: 14px;
+        color: azure;
+        margin-bottom: 5px;
+        font-family: Helvetica;
+      }
+
+      .person {
+        display: flex; align-items: center; /* Aligns items vertically */ 
+        gap: 1px;
+        align-items: stretch; 
+        flex-direction: column;
+        margin-top: 10px;
+      }
+      .portrait1{
+        font-size: 14px;
+        color: azure;
+        margin-bottom: 5px;
+        font-family: Helvetica;
+        font-size: 15px;
+        background-color: black;
+        margin-bottom: 2px;
+        padding: 5px;
+        border: solid 1px azure;
+        flex: 4;
+      }
+      .portrait{
+        font-size: 14px;
+        color: azure;
+        margin-bottom: 5px;
+        font-family: Helvetica;
+        font-size: 15px;
+        background-color: black;
+        margin-bottom: 2px;
+        padding: 5px;
+        border: solid 1px azure;
+        flex: 4;
+        border-bottom-color: black;
+        border-left-color: azure;
+        border-right-color: azure;
+        border-top-color: azure;
+      }
+      .quote {
+        font-size: 14px;
+        color: azure;
+        margin-bottom: 5px;
+        font-family: Helvetica;
+        font-size: 15px;
+        border-radius: 7px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        padding: 5px;
+        border: solid 1px azure;
+        background-color: rgba(139, 0, 0, 0.361);
+        flex: 1;
+        border-top-color: black;
+      }
+      a {
+        color: azure; /* Link color */
+        text-decoration: underline; /* Underline links */
+      }
+      .label {
+        display: inline-block;
+        background-color: black;
+        font-family: Helvetica;
+        border: 1px solid azure;
+        border-radius: 5px;
+        padding: 9px;
+        text-align: left;
+        color: azure;
+        cursor: pointer;
+        margin-top: 7px; /* Margin around buttons */
+        font-size: 18px; /* Increased font size for buttons */
+        transition: background-color 0.15s, color 0.15s;
+      }
+      .label:hover {
+        background-color: azure;
+        color: black;
+      }
+      .return-botton-location {
+        text-align: right;
+      }
+      .café-button-div-ffs {
+        margin-top: 20px;
+      }
+      .café-button {
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        border: 1px solid black;
+        border-radius: 3px;
+        cursor: pointer;
+        margin: 0; /* Margin around buttons */
+        padding: 2px; /* Increased padding for larger buttons */
+        font-size: 9px; /* Increased font size for buttons */
+        transition: background-color 0.15s, color 0.15s;
+        margin-right: 12px;
+      }
+
+      .café-button:hover {
+        background-color: rgb(255, 255, 255);
+        color: black;
+        border: 1px solid black;
+      }
+      .label:hover a,
+      .café-button:hover a {
+        color: black !important;
+      }
+      .café-button:active {
+        background-color: rgb(0, 0, 0);
+        color: azure;
+      }
+
+      /* Style for the return button */
+      .return-button {
+        margin-top: 20px;
+      }
+      .listofpersons {
+        margin-top: 3px;
+      }
+    </style>
+  <body>
+    <main>
+      <div class="all_elements">
+        <div class="Artpiece">
+          <div class="participating_party">
+            <h2>&#169; 2025 Urban Expresso</h2>
+          </div>
+          <div class="text">
+            <h2>The Idea:</h2>
+          <div class="portrait1">To grant young artists the public visibility usually restricted to established artist.  <a
+            href="PDFs/Roadmap UE.pdf"
+            target="_blank"
+            style="color: azure"
+            >Here</a>'s how.</div>
+          <div class="text">
+            <h2>Who we are:</h2>
+            <div class="listofpersons">
+            <div class="person">
+            <div class="portrait">
+                Name: <br>
+                Fav Food: <br>
+                Background: </div> 
+                <div class="quote"> Modus Operandi: 
+                    " ... "</div>
+            </div>
+            <div class="person">
+                <div class="portrait">
+                    Name: <br>
+                    Fav Food: <br>
+                    Background: </div> 
+                    <div class="quote"> Modus Operandi: 
+                        " ... "</div>
+                </div>
+                <div class="person">
+                    <div class="portrait">
+                        Name: <br>
+                        Fav Food: <br>
+                        Background: </div> 
+                        <div class="quote"> Modus Operandi: 
+                            " ... "</div>
+                    </div>
+                  </div>
+          </div>
+        </div>
+
+        <div class="Artpiece">
+          <div class="text">
+          </div>
+        </div>
+        <div class="return-botton-location">
+          <button class="return-button café-button">
+            <a href="index.html" style="text-decoration: none; color: azure;">back</a>
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
