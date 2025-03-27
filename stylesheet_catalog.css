@@ -8,8 +8,7 @@ p {
    body {
       font-family: Helvetica;
       background-color: #000000;
-      padding-top: 0px;
-      padding-bottom: 15px;
+      padding-top: 0px;;
           }
           .headbar {
             height: 50px;
@@ -38,7 +37,7 @@ p {
           .café-button-div-ffs {
             position: fixed;
             right: 2px;
-            top: 5px; /* Aligns it with the header */
+            top: -46px; /* Aligns it with the header */
             z-index: 1000;
           }
           
@@ -57,12 +56,14 @@ p {
             background-color: black;
             color: azure;
             border: 1px solid azure;
+            border-right: black;
             cursor: pointer;
             font-size: 15px;
             transition: background-color 0.15s, color 0.15s;
             margin-top: 79px;
             text-align: left;
             padding-top: 2px;
+            padding-right: 2px;
           }
           
           .labelinfo:hover,
@@ -85,7 +86,7 @@ p {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 15px;
     row-gap: 40px;
-    margin-block-end: 15px;
+    margin-block-end: 65px;
     margin-top: 7px;
   }
   @media (max-width: 525px) {
@@ -174,22 +175,29 @@ p {
             flex-direction: row;
             align-items: center;
           }
-          .contact {
+          .Website {
               font-family: Helvetica;
               width: 200px;
               flex: flex;
-              margin-left: 15px;
+              font-size: 12px;
+text-align: center;
               color: azure;
             }
             .copyright {
               font-family: Helvetica;
               color: azure;
+              flex: flex;
+              text-align: center;
+              font-size: 12px;
               width: 200px;
             }
             .terms {
               font-family: Helvetica;
-              color: azure;
               width: 200px;
+              flex: flex;
+              font-size: 12px;
+              text-align: center;
+              color: azure;
             }
             .backtotop {
                           width: 200px;
